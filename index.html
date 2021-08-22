@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>socialize</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
     <style>
       body {
           background-color: #edecd8;
@@ -11,7 +12,7 @@
       #container {
           left: 0px;
           position: absolute;
-          top: 45%;
+          top: 50%;
           transform: translateY(-50%);
           width: 100%;
       }
@@ -27,14 +28,21 @@
           color: #52768a;
           display: block;
           font-size: 200%;
+          margin: 0px 20px 15px 20px;
           text-align: center;
           vertical-align: middle;
+      }
+
+      #new-question {
+          opacity: 0;
+          transition: opacity 1s ease-in 0.5s;
       }
 
       a {
           color: #bbb8ae;
           display: block;
           font-family: sans-serif;
+          padding: 10px;
           text-align: center;
           text-decoration: none;
           vertical-align: middle;
@@ -44,18 +52,33 @@
   <body>
     <div id="container">
       <p id="question">Please enable JavaScript.</p>
-      <a href="">new question</a>
+      <a id="new-question" href="">new question</a>
     </div>
     <div id="footer">
       <a href="">about</a>
     </div>
     <script>
-      
+
       // Questions
       const questions = [
+          "Are you a cat person or a dog person?",
+          "Do you like being asked stupid questions?",
           "What did you miss most during the Covid-19 pandemic?",
-          "What is your favourite food?",
+          "What do you normally do for fun?",
+          "What is the dumbest way you have been injured?",
+          "What is the most useless talent you have?",
+          "What is the worst purchase you have ever made?",
           "What is your favourite Gilmore Girls episode?",
+          "What is your favourite beer brewery?",
+          "What is your favourite drink?",
+          "What is your favourite food?",
+          "What is your hidden talent?",
+          "What is your preferred spaghetti sauce?",
+          "What will finally break the internet?",
+          "What would you name your boat if you had one?",
+          "What would you name your spaceship if you had one?",
+          "Would you rather be always 15 minutes late or 30 minutes early?",
+          "Would you rather have drill-hands or rollerblade-feet?",
       ];
 
       // Get random question
@@ -70,6 +93,7 @@
               document.getElementById("question").innerHTML = question.slice(0, i);
               await sleep(50);
           }
+          document.getElementById("new-question").style.opacity = "1";
       }
 
       typeQuestion();
