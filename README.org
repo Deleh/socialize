@@ -7,7 +7,7 @@
 
 ** Installation
 
-   Make the =index.html= file available via a webserver.
+   Make the =index.html= and =favicon.png= files available via a webserver.
 
 ** Adding questions
 
