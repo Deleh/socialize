@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socialize</title>
+    <style>
+      body {
+          background-color: #edecd8;
+      }
+
+      #container {
+          left: 0px;
+          position: absolute;
+          top: 45%;
+          transform: translateY(-50%);
+          width: 100%;
+      }
+
+      #footer {
+          bottom: 0px;
+          left: 0px;
+          position: absolute;
+          width: 100%;
+      }
+
+      #question {
+          color: #52768a;
+          display: block;
+          font-size: 200%;
+          text-align: center;
+          vertical-align: middle;
+      }
+
+      a {
+          color: #bbb8ae;
+          display: block;
+          font-family: sans-serif;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p id="question">Please enable JavaScript.</p>
+      <a href="">new question</a>
+    </div>
+    <div id="footer">
+      <a href="">about</a>
+    </div>
+    <script>
+      
+      // Questions
+      const questions = [
+          "What did you miss most during the Covid-19 pandemic?",
+          "What is your favourite food?",
+          "What is your favourite Gilmore Girls episode?",
+      ];
+
+      // Get random question
+      let question = questions[Math.floor(Math.random() * questions.length)];
+
+      // Sleep function
+      const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+
+      // Function which types the question
+      const typeQuestion = async () => {
+          for (let i = 0; i <= question.length; i++) {
+              document.getElementById("question").innerHTML = question.slice(0, i);
+              await sleep(50);
+          }
+      }
+
+      typeQuestion();
+    </script>
+  </body>
+</html>

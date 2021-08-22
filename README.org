@@ -1,0 +1,14 @@
+* socialize
+
+  Ever felt lost in a group conversation?
+  Don't worry, *socialize* is there to support you.
+
+  It is a single web page which asks socializing, funny and interesting questions.
+
+** Installation
+
+   Make the =index.html= file available via a webserver.
+
+** Adding questions
+
+   Fork this repo, add your questions to the =questions= array in the =index.html= file and submit a pull request :)
