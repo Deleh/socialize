@@ -13,11 +13,11 @@
    If you want to host it (e.g. under /socialize.mybar.org/), grab the code, adjust anything to your liking and provide the =index.html= and =favicon.png= files via a webserver.
 
    This web page is also available as [[https://nixos.wiki/wiki/Flakes][Nix Flake]].
-   The two neccessary files are provided directly in =$out=.
+   The two neccessary files are provided in =/var/www/socialize= of the flake output.
    To use it for example with Nginx, the flake (included as =socialize=) content can be used like this:
 
    #+begin_example nix
-     services.nginx.virtualHosts."example.org".locations."/".root = socialize.packages."<your-arch>".socialize;
+     services.nginx.virtualHosts."example.org".locations."/".root = "${socialize.packages."<your-arch>".socialize}/var/www/socialize";
    #+end_example
 
 ** Adding questions
