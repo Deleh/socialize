@@ -9,7 +9,7 @@
 
    For local usage you can just clone this repository and open the =index.html= file in your browser.
 
-   If you want to host it, make the =index.html= and =favicon.png= files available via a webserver.
+   If you want to host it (e.g. under /socialize.mybar.org/), grab the code, adjust anything to your liking and provide the =index.html= and =favicon.png= files via a webserver.
 
 ** Adding questions
 
@@ -17,8 +17,9 @@
 
 ** Other application fields
 
-   Even though this is called /socialize/, you can easily realize other things by replacing the question list:
+   Even though this is called /socialize/, you can easily realize other things by replacing the question list with appropriate strings:
 
+   - Dice
    - Lottery
    - Fortuneteller
    - ...
