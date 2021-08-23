@@ -1,5 +1,5 @@
 {
-  description = "Socialize web page";
+  description = "socialize web page";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
