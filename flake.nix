@@ -18,8 +18,8 @@
               name = "socialize";
               src = self;
               installPhase = ''
-                install -m 444 -D index.html $out/index.html
-                install -m 444 -D favicon.png $out/favicon.png
+                install -m 444 -D index.html $out/var/www/index.html
+                install -m 444 -D favicon.png $out/var/www/favicon.png
               '';
             };
           defaultPackage = self.packages.${system}.socialize;
