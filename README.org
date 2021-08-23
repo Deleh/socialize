@@ -4,6 +4,7 @@
   Don't worry, *socialize* is there to support you.
 
   It is a self-contained web page which asks socializing, funny and interesting questions.
+  Use it as conversation starter or just for fun.
 
 ** Installation
 
