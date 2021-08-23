@@ -3,12 +3,22 @@
   Ever felt lost in a group conversation?
   Don't worry, *socialize* is there to support you.
 
-  It is a single web page which asks socializing, funny and interesting questions.
+  It is a self-contained web page which asks socializing, funny and interesting questions.
 
 ** Installation
 
-   Make the =index.html= and =favicon.png= files available via a webserver.
+   For local usage you can just clone this repository and open the =index.html= file in your browser.
+
+   If you want to host it, make the =index.html= and =favicon.png= files available via a webserver.
 
 ** Adding questions
 
    Fork this repo, add your questions to the =questions= array in the =index.html= file and submit a pull request :)
+
+** Other application fields
+
+   Even though this is called /socialize/, you can easily realize other things by replacing the question list:
+
+   - Lottery
+   - Fortuneteller
+   - ...
