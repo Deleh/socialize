@@ -1,6 +1,7 @@
 * socialize
 
   Ever felt lost in a group conversation?
+  Have you run out of conversation topics with your friends?
   Don't worry, *socialize* is there to support you.
 
   It is a self-contained web page which asks socializing, funny and interesting questions.
@@ -8,18 +9,21 @@
 
 ** Installation
 
-   For local usage you can just clone this repository and open the =index.html= file in your browser.
-
-   If you want to host it (e.g. under /socialize.mybar.org/), grab the code, adjust anything to your liking and provide the =index.html= and =favicon.png= files via a webserver.
+   This is just one HTML file, grab the =index.html= and open it in your favourite browser or host it with whatever webserver you like.
 
    This web page is also available as [[https://nixos.wiki/wiki/Flakes][Nix Flake]].
-   The two neccessary files are provided in =/var/www/socialize= of the flake output.
+   The =index.html= file is provided in =/var/www/socialize= of the flake output.
    To use it for example with Nginx, the flake (included as =socialize=) content can be used like this:
 
    #+begin_example nix
      services.nginx.virtualHosts."example.org".locations."/".root = "${socialize.packages."<your-arch>".socialize}/var/www/socialize";
    #+end_example
 
+*** Requirements
+
+    The browser must have JavaScript enabled.
+    But don't worry, nothing is loaded from a third party.
+    
 ** Adding questions
 
    Fork this repo, add your questions to the =questions= array in the =index.html= file and submit a pull request :)
