@@ -19,7 +19,6 @@
               src = self;
               installPhase = ''
                 install -m 444 -D index.html $out/var/www/socialize/index.html
-                install -m 444 -D favicon.png $out/var/www/socialize/favicon.png
               '';
             };
           defaultPackage = self.packages.${system}.socialize;
