@@ -7,6 +7,8 @@
   It is a self-contained web page which asks socializing, funny and interesting questions.
   Use it as conversation starter or just for fun.
 
+  You can see it in action [[https://deleh.github.io/socialize][here]].
+
 ** Installation
 
    This is just one HTML file, grab the =index.html= and open it in your favourite browser or host it with whatever webserver you like.
