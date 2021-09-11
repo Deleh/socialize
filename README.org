@@ -2,7 +2,7 @@
 
   Ever felt lost in a group conversation?
   Have you run out of conversation topics with your friends?
-  Don't worry, *socialize* is there to support you.
+  Don't worry, *socialize* is here to support you.
 
   It is a self-contained web page which asks socializing, funny and interesting questions.
   Use it as conversation starter or just for fun.
@@ -24,7 +24,7 @@
 *** Requirements
 
     The browser must have JavaScript enabled.
-    But don't worry, nothing is loaded from a third party.
+    But don't worry, nothing gets loaded from a third party.
     
 ** Adding questions
 
